@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="">
+  </header>
+
+
+  <section class="loginHeader">
+    <div class="loginIconAndText">
+      <img src="images/log-in.svg" alt="">
+      <h2>Login</h2>
+    </div>
+
+    <p>Insert your information below.</p>
+  </section>
+
+
+
+  <section class="loginInput">
+    <form action="">
+
+      <div class="labelIcon emailIcon">
+        <label for="email">E-mail </label>
+        <input type="email" placeholder="Type your email" id="email" class="textInput">
+      </div>
+
+      <div class="labelIcon passwordIcon">
+        <label for="password">Password </label>
+        <input type="password" placeholder="Type your password" id="password" class="textInput">
+      </div>
+  </section>
+
+
+  <section class="forGrid">
+    <div class="remindMeCheckbox">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Remind me</label>
+    </div>
+    <a href="" class="forgotMyPassword">Forgot my password</a>
+    <button class="login">LOGIN</button>
+  </section>
+
+  <p class="signUp">Don't have an account? <a href="">Sign up!</a></p>
+  </form>
+
+
+  <!-- <img src="images/side-image.jpg" alt="camping"> -->
+
+
+
+</body>
+
 </html>

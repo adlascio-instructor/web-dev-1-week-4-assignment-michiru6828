@@ -1,0 +1,131 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',
+        sans-serif;
+    /* font-family: 'Roboto',
+        sans-serif; */
+    background-color: var(--background);
+    color: var(--text-base);
+
+}
+
+body {
+    margin: 25px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.loginHeader {
+    margin-bottom: 30px;
+}
+
+
+
+.loginIconAndText {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.loginIconAndText img {
+    margin-right: 10px;
+}
+
+.labelIcon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.textInput {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border-color: #afb6c2;
+    border-width: 1px;
+}
+
+.emailIcon:before {
+    content: "";
+    position: absolute;
+    /* 親を基準にポジションを決める。他の要素は無視 */
+    left: 7px;
+    top: 37px;
+    bottom: 0;
+    right: 0;
+    background: url('images/mail.svg') no-repeat;
+    width: 20px;
+}
+
+.passwordIcon:before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 37px;
+    bottom: 0;
+    right: 0;
+    background: url('images/lock.svg') no-repeat;
+    width: 20px;
+}
+
+.remindMeCheckbox input {
+    accent-color: var(--primary-color);
+}
+
+.forGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.remindMeCheckbox {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.forgotMyPassword {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--primary-color)
+}
+
+.login {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--background);
+}
+
+.signUp {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.signUp a {
+    color: var(--primary-color);
+    text-decoration: none
+}
+
+p .signUp {
+    font-weight: 400;
+}
